@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "../button/Button";
-import { useGlobalContext } from "../../context-api/context";
-const Banner = () => {
-  const {projectName, imgNetwork} = useGlobalContext();
+import imgNetwork from '../images/network.jpg'
+const Banner = ({projectName}) => {
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
@@ -11,7 +10,7 @@ const Banner = () => {
           <h1 className="banner-heading">{projectName}</h1>
           <p className="banner-top-data">Powered by CISCO</p>
           <p className="banner-para">
-            The place where it enables you to find data regarding or leated to your need...
+            The place where it enables you to find data regarding or reated to your need...
           </p>
           <Button className="btn info-btn">
               Information
